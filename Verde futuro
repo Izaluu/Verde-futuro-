@@ -3,67 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Partido Verde Futuro (PVF) - Comprometido com a preservação ambiental e a construção de um futuro sustentável.">
     <title>Partido Verde Futuro (PVF)</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <div class="page">
-        <header>
-            <img src="Leonardo_Phoenix_crie_a_logo_de_um_partido_politico_Esse_parti_2 (1).jpg" alt="Logotipo do Partido Verde Futuro" class="logo">
-            <h1>Partido Verde Futuro (PVF)</h1>
+        <header class="main-header">
             <div class="slogan">"Transforme o Presente, Preserve o Futuro: Vote Verde!"</div>
+            <img src="Leonardo_Phoenix_crie_a_logo_de_um_partido_politico_Esse_parti_2 (1).jpg" alt="Logotipo do Partido Verde Futuro" class="logo">
         </header>
         <div class="content">
-            <div class="section">
-                <h2>Sobre o Partido</h2>
+            <section class="intro">
                 <p>O Partido Verde Futuro (PVF) surge com um propósito claro e urgente: salvar o planeta e garantir um futuro sustentável para a humanidade. Compreendemos que a preservação do meio ambiente é fundamental para a sobrevivência humana e a saúde do nosso planeta. Nossos objetivos incluem a luta contra as queimadas, a mitigação das mudanças climáticas, a proteção dos biomas e a promoção de práticas que respeitem o equilíbrio ecológico.</p>
-            </div>
-            <div class="section">
-                <h2>Nossos Compromissos</h2>
+            <section class="commitments">
                 <div class="commitment-images">
-                    <img src="renovavel.jpg" alt="Imagem dos compromissos 1" class="commitment-image">
-                    <img src="queimada.jpg" alt="Imagem dos compromissos 2" class="commitment-image">
-                    <img src="vegano.jpg" alt="Imagem dos compromissos 3" class="commitment-image">
-                <ul>
-                    <li>Combater as queimadas para proteger as florestas e a biodiversidade.</li>
-                    <li>Mitigar as mudanças climáticas reduzindo emissões de gases e adaptando-se às novas condições.</li>
-                    <li>Preservar biomas através da criação de áreas de proteção ambiental.</li>
-                    <li>Investir em energias renováveis, como solar e eólica.</li>
-                    <li>Promover o veganismo e o vegetarianismo para uma alimentação mais sustentável e saudável.</li>
-                </ul>
-            </div>
-            <div class="section">
+                    <img src="renovavel.jpg" alt="Imagem de energia renovável" class="commitment-image">
+                    <img src="queimada.jpg" alt="Imagem de queimadas" class="commitment-image">
+                    <img src="vegano.jpg" alt="Imagem de alimentação vegana" class="commitment-image">
+                </div>
+                <p>O PVF se compromete a combater as queimadas para proteger as florestas e a biodiversidade, a mitigar as mudanças climáticas reduzindo emissões de gases e adaptando-se às novas condições, e preservar biomas através da criação de áreas de proteção ambiental. Além disso, investe em energias renováveis, como solar e eólica, e promove o veganismo e o vegetarianismo para uma alimentação mais sustentável e saudável.</p>
+            </section>
+            </section>
+            <section class="side-by-side">
                 <div class="side-by-side-images">
-                    <img src="Leonardo_Phoenix_crie_a_logo_de_um_partido_politico_Esse_parti_2 (1).jpg" alt="Imagem 1" class="side-image">
-                    <img src="Design sem nome (2).png" alt="Imagem 2" class="side-image">
+                    <img src="Design sem nome (2).png" alt="Imagem adicional" class="side-image">
+                    <img src="Leonardo_Phoenix_crie_a_logo_de_um_partido_politico_Esse_parti_2 (1).jpg" alt="Imagem do partido" class="side-image">
                 </div>
-            </div>
-            <div class="section" id="contato">
-                <h2>Contato</h2>
-                <p>Quer saber mais ou entrar em contato conosco? Preencha o formulário abaixo ou use os nossos canais de contato:</p>
-                <form action="#" method="post">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
-                    
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                    
-                    <button type="submit">Enviar</button>
-                </form>
-                <div class="contact-info">
-                    <p><strong>Email:</strong> contato@partidoverdefuturo.org</p>
-                    <p><strong>Redes Sociais:</strong></p>
-                    <ul>
-                        <li><a href="https://facebook.com/partidoverdefuturo" target="_blank">Facebook</a></li>
-                        <li><a href="https://twitter.com/partidoverdefuturo" target="_blank">Twitter</a></li>
-                        <li><a href="https://instagram.com/partidoverdefuturo" target="_blank">Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            </section>
         <footer>
             <p>Partido Verde Futuro - Transforme o Presente, Preserve o Futuro: Vote Verde!</p>
         </footer>
@@ -156,6 +123,97 @@ form label {
     margin-top: 10px;
 }
 
+/* Definição de tamanho para simular folha A4 */
+.page {
+    width: 1000px; /* Largura de uma folha A4 */
+    min-height: 297px; /* Altura de uma folha A4 */
+    margin: 0 auto;
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box;
+    background-color: #3A7400;
+    font-family: Arial, sans-serif;
+}
+
+.main-header {
+    width: 1000px; /* Largura total da página */
+    max-width: 600px; /* Largura máxima do cabeçalho */
+    height: 75px;
+    background-color: #ffffff;
+    color: #3A7400;
+    padding: 0; /* Remove padding para manter a altura exata */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 75px;
+}
+
+.slogan {
+    font-size: 1.2em; /* Ajustado para caber dentro do cabeçalho */
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: left;
+    flex: 1;
+    padding-left: 10px; /* Pequeno espaçamento à esquerda */
+}
+
+.content {
+    padding: 0;
+    color: #000000;
+}
+
+.intro{
+    width: 100%; /* Ajuste conforme necessário */
+    margin-bottom: 20px; /* Espaço abaixo das seções */
+    background-color: #ffffff;
+}
+
+.commitments {
+    color: #3A7400;
+    padding: 10px;
+}
+
+.commitment-images {
+    display: flex;
+    justify-content: space-between; /* Espaçamento uniforme entre as imagens */
+    margin-bottom: 10px; /* Espaço abaixo das imagens */
+}
+
+.commitment-image {
+    width: 30%; /* Ajustado para as imagens ficarem lado a lado com espaçamento */
+    height: auto;
+    margin-right: 5%; /* Espaçamento entre as imagens */
+}
+
+.commitment-image:last-child {
+    margin-right: 0; /* Remove o espaçamento à direita da última imagem */
+}
+
+.side-by-side-images {
+    display: flex;
+    margin-bottom: 10px; /* Espaço abaixo das imagens */
+}
+
+.side-image {
+    width: 25%; /* Ajustado para duas imagens lado a lado */
+    height: auto;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
 form input, form textarea {
     margin-top: 5px;
     padding: 10px;
@@ -177,38 +235,15 @@ form button:hover {
     background-color: #388e3c;
 }
 
-.contact-info {
-    margin-top: 10mm; /* Reduzido o espaço acima da seção de contato */
-}
-
-.contact-info p {
-    margin: 5px 0; /* Reduzido o espaço em torno dos parágrafos */
-}
-
-.contact-info ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; /* Removido o espaço da lista */
-}
-
-.contact-info li {
-    margin-bottom: 2px; /* Reduzido o espaço entre os itens da lista */
-}
-
-.contact-info a {
-    color: #4caf50;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
 footer {
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    padding: 10mm;
-    position: relative;
-    bottom: 0;
+    width: 1000px; /* Largura total da página */
+    max-width: 600px; /* Largura máxima do cabeçalho */
+    height: 75px;
+    background-color: #ffffff;
+    color: #3A7400;
+    padding: 0; /* Remove padding para manter a altura exata */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
